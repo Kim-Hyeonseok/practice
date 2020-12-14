@@ -4,13 +4,13 @@
 <title>현석이의 맛집지도 서울편</title>
 <meta charset="utf-8">
 </head>
-
 <style>
 #grid {
   display: grid;
   grid-template-columns: 190px 1fr
 }
 #grid ul {
+  list-style: none;
   border-right:1px solid gray;
   width:100px;
   margin:0;
@@ -38,6 +38,21 @@ h2 {
 li {
   padding:5px;
 }
+@media(max-width:600px){
+  #grid {
+    display: block;
+      }
+      h1 {
+        border-bottom:none;
+      }
+      #grid ul {
+        list-style: none;
+        border-right:none;
+      }
+      h2 {
+        margin-left: 53px;
+      }
+    }
 </style>
 <body>
 <h1><a href="index.html" style="color:green">김현석의 맛집지도</a></h1>
@@ -49,7 +64,6 @@ li {
 </ul>
   <h2>서울 맛집</h2>
 </div>
-
 
 </body>
 </html>
